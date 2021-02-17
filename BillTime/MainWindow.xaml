@@ -5,8 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BillTime"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Bill Time App" Height="500" Width="450">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Menu IsMainMenu="True" Grid.Row="0" FontSize="16" Margin="0 0 0 10">
+            <MenuItem Header="File">
+                <MenuItem x:Name="homeMenuItem" Header="Home" />
+                <MenuItem x:Name="exitMenuItem" Header="Exit" />
+            </MenuItem>
+            <MenuItem Header="Editors">
+                <MenuItem x:Name="clientMenuItem" Header="Client" />
+                <MenuItem x:Name="paymentMenuItem" Header="Payment" />
+                <MenuItem x:Name="workMenuItem" Header="Work" />
+                <MenuItem x:Name="defaultsMenuItem" Header="Defaults" />
+            </MenuItem>
+            <MenuItem Header="Help">
+                <MenuItem x:Name="aboutMenuItem" Header="About" />
+            </MenuItem>
+        </Menu>
+        <ContentControl x:Name="content" Grid.Row="1" Margin="10 0 10 10"/>
     </Grid>
 </Window>
