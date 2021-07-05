@@ -5,9 +5,11 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:BillTime.Controls"
              mc:Ignorable="d" FontSize="16" Background="White"
-             d:DesignHeight="450" d:DesignWidth="400">
+             d:DesignHeight="520" d:DesignWidth="400">
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
             <RowDefinition Height="auto" />
             <RowDefinition Height="auto" />
             <RowDefinition Height="auto" />
@@ -19,7 +21,10 @@
         </Grid.RowDefinitions>
 
         <!-- Row 0 -->
-        <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="5 5 5 10">
+        <TextBlock FontSize="24">Clients form</TextBlock>
+
+        <!-- Row 1 -->
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="5 5 5 10">
             <StackPanel Orientation="Vertical">
                 <TextBlock>Client</TextBlock>
                 <ComboBox x:Name="clientDropDown" Width="295" />
@@ -28,26 +33,32 @@
             <Button x:Name="newButton" Padding="5 2" Margin="0 0 5 0" VerticalAlignment="Bottom">New</Button>
         </StackPanel>
 
-        <!-- Row 1 -->
-        <StackPanel Orientation="Vertical" Grid.Row="1" Margin="5 5 5 10">
+        <!-- Row 2 -->
+        <StackPanel Orientation="Vertical" Grid.Row="2" Margin="5 5 5 10">
             <TextBlock>Name</TextBlock>
             <TextBox x:Name="nameText" />
         </StackPanel>
 
-        <!-- Row 2 -->
-        <StackPanel Orientation="Vertical" Grid.Row="2" Margin="5 5 5 10">
+        <!-- Row 3 -->
+        <StackPanel Orientation="Vertical" Grid.Row="3" Margin="5 5 5 10">
             <TextBlock>Email Address</TextBlock>
             <TextBox x:Name="emailText" />
         </StackPanel>
+
+        <!-- Row 4 -->
+        <StackPanel Orientation="Vertical" Grid.Row="4" Margin="5 5 5 10">
+            <TextBlock>Hourly Rate</TextBlock>
+            <TextBox x:Name="hourlyRateText" />
+        </StackPanel>
         
-        <!-- Row 3 -->
-        <StackPanel Orientation="Horizontal" Grid.Row="3" Margin="5 5 5 10">
+        <!-- Row 5 -->
+        <StackPanel Orientation="Horizontal" Grid.Row="5" Margin="5 5 5 10">
             <CheckBox x:Name="preBillCheck" Margin="0 0 10 0">Pre-bill Client</CheckBox>
             <CheckBox x:Name="hasCutOffCheck">Cut Off Client</CheckBox>
         </StackPanel>
         
-        <!-- Row 4 -->
-        <StackPanel Orientation="Horizontal" Grid.Row="4" Margin="5,5,5,10">
+        <!-- Row 6 -->
+        <StackPanel Orientation="Horizontal" Grid.Row="6" Margin="5,5,5,10">
             <StackPanel Orientation="Vertical" Margin="0 0 10 0">
                 <TextBlock>Cut Off Number</TextBlock>
                 <TextBox x:Name="cutOffNumberText" Width="185" />
@@ -58,8 +69,8 @@
             </StackPanel>
         </StackPanel>
         
-        <!-- Row 5 -->
-        <StackPanel Orientation="Horizontal" Grid.Row="5" Margin="5 5 5 10">
+        <!-- Row 7 -->
+        <StackPanel Orientation="Horizontal" Grid.Row="7" Margin="5 5 5 10">
             <StackPanel Orientation="Vertical" Margin="0 0 10 0">
                 <TextBlock>Billing Increment</TextBlock>
                 <TextBox x:Name="billingIncrementText" Width="185" />
@@ -70,7 +81,7 @@
             </StackPanel>
         </StackPanel>
         
-        <!-- Row 6 -->
-        <Button x:Name="submitButton" Grid.Row="6" Margin="5 5 5 10" Padding="0 10">Submit</Button>
+        <!-- Row 8 -->
+        <Button x:Name="submitButton" Grid.Row="8" Margin="5 5 5 10" Padding="0 10">Submit</Button>
     </Grid>
 </UserControl>

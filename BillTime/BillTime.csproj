@@ -59,7 +59,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Controls\DefaultsControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Controls\MainControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\PaymentsControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -74,8 +82,14 @@
     <Compile Include="Controls\ClientControl.xaml.cs">
       <DependentUpon>ClientControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\DefaultsControl.xaml.cs">
+      <DependentUpon>DefaultsControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\MainControl.xaml.cs">
       <DependentUpon>MainControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PaymentsControl.xaml.cs">
+      <DependentUpon>PaymentsControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
