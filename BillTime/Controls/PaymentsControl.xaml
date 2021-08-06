@@ -49,5 +49,10 @@
             <TextBlock>Hours</TextBlock>
             <TextBox x:Name="hoursText" />
         </StackPanel>
+        
+        <!-- Row 5 -->
+        <Button x:Name="submitForm" Grid.Row="5" Margin="5 5 5 10">
+            Submit
+        </Button>
     </Grid>
 </UserControl>
